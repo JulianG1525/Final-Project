@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    grid-area: H;
+    position: sticky;
+}
+header img {
+    grid-area: L;
+}
+nav {
+    grid-area: N;
+}
+main {
+    grid-area: M;
+}
+footer {
+    grid-area: F;
+}
