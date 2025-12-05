@@ -1,12 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
 header {
-    text-align: center;
+    text-align: left;
     grid-area: H;
     position: sticky;
+    z-index: 100000;
+    background-color: #0A1A2F;
+    color: white;
+    top: 0;
+    font-size: 25px;
 }
-header img {
-    grid-area: L;
+h1, h2, h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav {
+p, li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header a:active {
+    text-decoration: none;    
+}
+header #logo {
+    float: left;
+    background: none;
+}
+header nav #hNav {
     grid-area: N;
 }
 main {

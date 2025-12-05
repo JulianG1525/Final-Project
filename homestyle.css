@@ -1,5 +1,9 @@
 #container {
     display: grid;
     grid-template-areas: 
-    "";
+    "H N N N"
+    "M M M M"
+    "M M M M"
+    "F F F F";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
 }
