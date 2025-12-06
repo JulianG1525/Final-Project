@@ -3,39 +3,119 @@ body {
     padding: 0;
     background-color: silver;
 }
+
 header {
     text-align: left;
     grid-area: H;
     position: sticky;
-    z-index: 100000;
+    z-index: 1;
     background-color: #0A1A2F;
     color: white;
     top: 0;
-    font-size: 25px;
+    font-size: 17px;
+    padding-bottom: 10px;
 }
-h1, h2, h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+header h1 {
+    margin: 10px;
+    font-size: 45px;
 }
-p, li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1,
+h2,
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+p,
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
 header a {
     text-decoration: none;
     color: white;
 }
-header a:active {
-    text-decoration: none;    
+nav {
+    padding-bottom: 10px;
 }
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    padding: 0 50px;
+    justify-items: center;
+    list-style-type: none;
+}
+nav ul li a:hover {
+  position: relative;
+  bottom: 5px;
+  color: silver;
+}
+header a:active {
+    text-decoration: none;
+}
+
 header #logo {
     float: left;
     background: none;
 }
-header nav #hNav {
+
+header nav#hNav {
     grid-area: N;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2%;
+}
+
 main {
     grid-area: M;
 }
+
 footer {
     grid-area: F;
+}
+#container {
+    display: grid;
+    grid-template-areas: 
+    "H H H H"
+    "M M M M"
+    "M M M M"
+    "F F F F";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* java buttons */
+
+img.imgEnlarge {
+    transition: 0.5s ease;
+    transform: scale(2);
+    display: block;
+    margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    position: relative;
+    z-index: 1;
+}
+body.imgEnlarge {
+    background-color: rgba(0, 0, 0, 0.603);
+    overflow: hidden;
+}
+button.imgEnlarge {
+    position: absolute;
+    z-index: 1;
+
 }

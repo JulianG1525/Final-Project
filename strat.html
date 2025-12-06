@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stratocaster</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="buttons.js" defer></script>
 </head>
-<body>
+<body id="bgEnlarge">
     <div id="container">
         <header>
+            <a href="index.html"><img id="logo"
+                    src="https://png.pngtree.com/png-vector/20250716/ourmid/pngtree-dark-grey-round-icon-to-create-a-black-white-logo-for-vector-png-image_7268002.png"
+                    width="150" height="150"></a>
             <h1><a href="index.html">Jeetar Store</a></h1>
             <p>Find your Sound</p>
-        </header> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>   
-                <li><a href="strat.html">Stratocaster</a></li>
-                <li><a href="lp.html">Les Paul</a></li>
-                <li><a href="prs.html">PRS (Paul Reed Smith)</a></li>
-            </ul>            
-        </nav>
+            <nav id="hNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="strat.html">Stratocaster</a></li>
+                    <li><a href="lp.html">Les Paul</a></li>
+                    <li><a href="prs.html">PRS (Paul Reed Smith)</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <section class="stratHist">
+                <img id="imgEnlarge" src="https://lh5.googleusercontent.com/proxy/fxkOLRuCvQXVADM8Xzutx-7_J-FLLjRkxT5GKYxjFgvg6I5q18eIMRDm5NZPhEBVeNEdvxoSlX0EepY766WgCoiTJZc">
+                <button onclick="enlarge()">Enlarge</button>
                 <h2>
                     Stratocaster History
                 </h2>
@@ -35,9 +41,11 @@
                 </h3>
                 <p>
                     The Stratocaster quickly became a favorite among musicians, particularly in rock and blues genres.
-                    Its popularity surged in the late 1950s and 1960s, with notable players like Buddy Holly, Jimi Hendrix, and Eric Clapton showcasing its versatility and unique sound.
+                    Its popularity surged in the late 1950s and 1960s, with notable players like Buddy Holly, Jimi Hendrix, Mark Knopfler, and Eric Clapton showcasing its versatility and unique sound.
                     The guitar's appearance on television shows, such as when Holly performed on The Ed Sullivan Show, helped cement its status as a cultural icon.
                 </p>
+                <img src="https://guitar.com/wp-content/uploads/2020/09/Mark-Knopfler-Credit-Phil-Dent-Redferns-@2160x2700.jpg">
+            <section class="stratLegacy">
                 <h3>
                     Legacy
                 </h3>
@@ -46,6 +54,7 @@
                     Its design has influenced countless other guitars, making it one of the most emulated shapes in the industry.
                     The Stratocaster remains a staple in modern music, used by a diverse range of artists across various genres. 
                 </p>
+            </section>
             </section>
         </main>
         <footer>
