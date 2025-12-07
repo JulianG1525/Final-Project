@@ -3,15 +3,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 } */
-section.stratHist p, section.Hist h2 {
+section.stratHist h2{
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+}
+section.stratHist p{
     margin-right: 20%;
     font-size: 20px;
+    padding: 0 20px;
 }
 section.stratHist img#imgEnlarge {
     float: right;
+    padding-right: 20px;
 }
 .stratHist {
     position: relative;
+}
+section.stratImpact h3 {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+}
+section.stratImpact p{
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 20%;
 }
 button {
     font-size: 16px;
@@ -20,8 +37,11 @@ button {
     cursor: pointer;
     position: absolute;
     z-index: 0;
-    right: 10px;
+    top: 500px;
+    right: 20px;
     border-radius: 10px;
+    background-color: #0A1A2F;
+    color: white;
 }
 
 section.sales {
@@ -40,6 +60,7 @@ section.sales img{
     margin: auto;
     border-radius: 10px;
     border: 2px solid black;
+    padding: 10px;
 }
 #container {
     display: grid;
@@ -50,5 +71,6 @@ section.sales img{
     "F F F F";
     grid-template-columns: 2fr 2fr 2fr 2fr;
 }
+
 
 

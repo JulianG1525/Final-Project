@@ -8,7 +8,7 @@ header {
     text-align: left;
     grid-area: H;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     background-color: #0A1A2F;
     color: white;
     top: 0;
@@ -80,6 +80,10 @@ main {
 
 footer {
     grid-area: F;
+    text-align: center;
+    padding: 10px;
+    background-color: #0A1A2F;
+    color: white;
 }
 #container {
     display: grid;
@@ -93,14 +97,18 @@ footer {
 
 
 /* java buttons */
+header.imgEnlarge {
+    z-index: 0;
+    overflow: hidden;
+}
 
 img.imgEnlarge {
     transition: 0.5s ease;
     transform: scale(2);
-    top: 20px;
+    margin-top: 40px;
+    z-index: 10000;
 }
 section.stratHist img#imgEnlarge.imgEnlarge {
-    z-index: 1;
     float: none;
     display: block;
     margin-left: auto;
