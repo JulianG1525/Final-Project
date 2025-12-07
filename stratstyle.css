@@ -1,0 +1,54 @@
+/* section.sales {
+    grid-area: S;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+section.stratHist p, section.Hist h2 {
+    margin-right: 20%;
+    font-size: 20px;
+}
+section.stratHist img#imgEnlarge {
+    float: right;
+}
+.stratHist {
+    position: relative;
+}
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    right: 10px;
+    border-radius: 10px;
+}
+
+section.sales {
+    grid-area: S;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+}
+section.sales p {
+    font-size: 18px;
+}
+section.sales img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#container {
+    display: grid;
+    grid-template-areas: 
+    "H H H H"
+    "M M M M"
+    "S S S S"
+    "F F F F";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+
