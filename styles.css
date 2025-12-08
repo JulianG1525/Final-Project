@@ -76,6 +76,8 @@ nav ul li {
 
 main {
     grid-area: M;
+    max-width: 80%;
+    margin: auto;
 }
 
 footer {
@@ -108,7 +110,7 @@ img.imgEnlarge {
     margin-top: 40px;
     z-index: 10000;
 }
-section.stratHist img#imgEnlarge.imgEnlarge {
+section.stratHist img#imgEnlarge.imgEnlarge, section.lpHist img#imgEnlarge.imgEnlarge, section.prsHist img#imgEnlarge.imgEnlarge {
     float: none;
     display: block;
     margin-left: auto;

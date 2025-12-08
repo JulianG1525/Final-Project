@@ -1,12 +1,6 @@
-/* section.sales {
-    grid-area: S;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
 section.stratHist h2{
     text-align: left;
     font-size: 30px;
-    padding-left: 20px;
 }
 section.stratHist p{
     margin-right: 20%;
@@ -16,19 +10,6 @@ section.stratHist p{
 section.stratHist img#imgEnlarge {
     float: right;
     padding-right: 20px;
-}
-.stratHist {
-    position: relative;
-}
-section.stratImpact h3 {
-    text-align: left;
-    font-size: 30px;
-    padding-left: 20px;
-}
-section.stratImpact p{
-    font-size: 20px;
-    padding: 0 20px;
-    margin-right: 20%;
 }
 button {
     font-size: 16px;
@@ -43,7 +24,39 @@ button {
     background-color: #0A1A2F;
     color: white;
 }
-
+.stratHist {
+    position: relative;
+}
+section.stratImpact h3 {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 100px;
+}
+section.stratImpact p{
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 20%;
+}
+section.stratImpact img {
+    float: none;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+section.stratLegacy h3 {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 100px;
+}
+section.stratLegacy p{
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 20%;
+}
+h2.sales {
+    text-align: left;
+    font-size: 30px;
+}
 section.sales {
     grid-area: S;
     display: grid;
@@ -52,8 +65,13 @@ section.sales {
     gap: 20px;
     align-items: center;
 }
+section.sales h2 {
+    font-size: 30px;
+    text-align: center;
+}
 section.sales p {
     font-size: 18px;
+    margin: 20px 40px;
 }
 section.sales img{
     display: block;

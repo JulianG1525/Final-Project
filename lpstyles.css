@@ -1,0 +1,46 @@
+section.lpHist img#imgEnlarge {
+    float: right;
+    padding-right: 20px;
+}
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    right: 20px;
+    border-radius: 10px;
+    background-color: #0A1A2F;
+    color: white;
+}
+section.lpHist {
+    position: relative;
+}
+section.lpHist h2 {
+    text-align: left;
+    font-size: 30px;
+}
+section.lpHist p{
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 20%;
+}
+section.lpImpact h3 {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 100px;
+}
+section.lpImpact p{
+    font-size: 20px;
+    padding: 0 20px;
+    margin-right: 20%;
+}
+section.lpImpact img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}   
