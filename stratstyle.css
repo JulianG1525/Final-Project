@@ -38,10 +38,9 @@ section.stratImpact p{
     margin-right: 20%;
 }
 section.stratImpact img {
+    display: block;
     float: none;
     margin: auto;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 section.stratLegacy h3 {
     text-align: left;
@@ -52,6 +51,10 @@ section.stratLegacy p{
     font-size: 20px;
     padding: 0 20px;
     margin-right: 20%;
+}
+section.stratLegacy img {
+    display: block;
+    margin: auto;
 }
 h2.sales {
     text-align: left;
@@ -89,6 +92,62 @@ section.sales img{
     "F F F F";
     grid-template-columns: 2fr 2fr 2fr 2fr;
 }
-
+/* Tablet */
+@media screen and (max-width: 768px) {
+    section.stratHist img#imgEnlarge, section.stratImpact img, section.stratLegacy img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 80%;
+        height: auto;
+    }
+    button {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+}
+/* Phone */
+@media screen and (max-width: 480px) {
+    section.sales {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+        margin: auto;
+    }
+    button {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    img.imgEnlarge {
+        transition: 0.5s ease;
+        transform: scale(1.25);
+        margin-top: 40px;
+        z-index: 10000;
+    }
+    header {
+        position: relative;
+    }
+    header h1, header p {
+        display: none;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        padding: auto ;
+        justify-items: center;
+        list-style-type: none;
+    }
+    header img#logo {
+        position: absolute;
+        margin: auto;
+        max-width: 15%;
+        height: auto;
+    }
+}
 
 
