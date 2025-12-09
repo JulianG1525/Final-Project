@@ -36,6 +36,30 @@ section.about img {
   border-radius: 10px;
   padding: 10px;
 }
+section.about div.newsletter {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+section.about div.newsletter input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #0A1A2F;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 80%;
+}
+section.about button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+    background-color: #0A1A2F;
+    color: white;
+}
 section.whyHome {
   font-size: 20px;
   padding: 0 20px

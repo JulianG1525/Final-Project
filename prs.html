@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="prsStyles.css">
+    <script src="buttons.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body id="bgEnlarge">
     <div id="container">
-        <header>
+        <header id="hide">
             <a href="index.html"><img id="logo"
                     src="https://png.pngtree.com/png-vector/20250716/ourmid/pngtree-dark-grey-round-icon-to-create-a-black-white-logo-for-vector-png-image_7268002.png"
                     width="150" height="150"></a>
@@ -28,6 +30,8 @@
         </header>
         <main>
             <section class="prsHist">
+                <button onclick="enlarge()">Enlarge Photo</button>
+                <img id="imgEnlarge" src="https://i.ebayimg.com/images/g/GW0AAOSw1O9jcmSc/s-l1200.jpg" width="364" height="512">
                 <h2>
                     PRS History
                 </h2>
@@ -39,7 +43,8 @@
                     maple tops, and a uniquely shaped body that blended elegance with comfort. From the beginning, PRS
                     set out to create instruments that were both visually stunning and sonically versatile.
                 </p>
-                <img src="https://i.ebayimg.com/images/g/GW0AAOSw1O9jcmSc/s-l1200.jpg" width="364" height="512">
+            </section>
+            <section class="prsImpact">
                 <h3>
                     Its Impact
                 </h3>
@@ -52,6 +57,8 @@
                     guitar could deliver in terms of craftsmanship and sound.
                 </p>
                 <img src="https://d159anurvk4929.cloudfront.net/news-legacy/super-eagle-introduction.jpg">
+            </section>
+            <section class="prsLegacy">
                 <h3>
                     Legacy
                 </h3>
@@ -62,6 +69,29 @@
                     musicians with its blend of tradition and modern engineering, offering instruments that appeal to
                     both collectors and working players. Today, PRS stands as a symbol of quality and creativity,
                     leaving a lasting mark on guitar culture and shaping the future of electric guitar design.
+                </p>
+            </section>
+                <h2 class="sales">
+                    Sales
+                </h2>
+            <section class="sales">
+                <p>
+                <img src="https://media.guitarcenter.com/is/image/MMGS7/L79265000001000-00-720x720.jpg" alt="PRS SE Custom 24-08 Electric Guitar Vintage Sunburst" width="400" height="400">
+                    <strong>PRS SE Custom 24-08 Electric Guitar Vintage Sunburst</strong><br>
+                    Price: $759.00<br> 
+                    Description: The PRS SE Custom 24-08 is an innovative solidbody electric guitar designed to inspire. The SE Custom 24-08 comes equipped with PRS 85/15 S pickups and an advanced switching system to yield eight distinct tones—from full humbucking girth to articulate single-coil chime. Discover a lifetime of musical exploration with the PRS SE Custom 24-08.
+                </p>
+                <p>
+                <img src="https://media.guitarcenter.com/is/image/MMGS7/M09119000002000-00-600x600.jpg" alt="PRS SE Custom 24 Limited-Edition Electric Guitar Blue Fade" width="400" height="400">
+                    <strong>PRS SE Custom 24 Limited-Edition Electric Guitar Blue Fade</strong><br>
+                    Price: $549.00<br>
+                    Description: The Fender American Professional II Stratocaster features V-Mod II single-coil pickups for a versatile tone, a comfortable "Deep C" neck profile, and a two-point tremolo system for smooth pitch modulation. Perfect for professional musicians seeking classic Stratocaster sound with modern playability.
+                </p>
+                <p>
+                <img src="https://media.guitarcenter.com/is/image/MMGS7/M15481000001000-00-2000x2000.jpg" alt="Gibson Les Paul Studio Dark Guitar Center-Exclusive Electric Guitar Ebony" width="400" height="400">
+                    <strong>Gibson Les Paul Studio Dark Guitar Center-Exclusive Electric Guitar Ebony</strong><br>
+                    Price: $1799.00<br>
+                    Description: The Fender Vintera '60s Stratocaster captures the essence of the 1960s with its classic design and vintage-inspired features. It has a comfortable "C"-shaped neck, three Alnico V single-coil pickups for authentic Strat tones, and a synchronized tremolo bridge. This guitar is perfect for players looking to play iconic sounds of the '60s era.
                 </p>
             </section>
         </main>

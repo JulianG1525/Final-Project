@@ -45,7 +45,6 @@ section.stratImpact img {
 section.stratLegacy h3 {
     text-align: left;
     font-size: 30px;
-    margin-top: 100px;
 }
 section.stratLegacy p{
     font-size: 20px;
@@ -93,7 +92,7 @@ section.sales img{
     grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     section.stratHist img#imgEnlarge, section.stratImpact img, section.stratLegacy img {
         float: none;
         display: block;
@@ -110,11 +109,15 @@ section.sales img{
     }
 }
 /* Phone */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+    section.sales img {
+        width: 90%;
+        height: auto;
+    }
     section.sales {
         grid-template-columns: 1fr;
         max-width: 80%;
-        margin: auto;
+        margin: 0 auto;
     }
     button {
         position: static;
@@ -141,10 +144,16 @@ section.sales img{
         padding: auto ;
         justify-items: center;
         list-style-type: none;
+        margin: 80px 0 auto 0;
     }
     header img#logo {
         position: absolute;
-        margin: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 5px;
         max-width: 15%;
         height: auto;
     }
