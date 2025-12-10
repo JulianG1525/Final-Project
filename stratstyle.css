@@ -59,7 +59,7 @@ h2.sales {
     text-align: left;
     font-size: 30px;
 }
-section.sales {
+div.sales {
     grid-area: S;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -67,15 +67,11 @@ section.sales {
     gap: 20px;
     align-items: center;
 }
-section.sales h2 {
-    font-size: 30px;
-    text-align: center;
-}
-section.sales p {
+div.sales p {
     font-size: 18px;
     margin: 20px 40px;
 }
-section.sales img{
+div.sales img{
     display: block;
     margin: auto;
     border-radius: 10px;

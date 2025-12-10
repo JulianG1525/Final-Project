@@ -53,7 +53,7 @@ section.prsLegacy p{
     padding: 0 20px;
     margin-right: 20%;
 }
-section.sales {
+div.sales {
     grid-area: S;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,20 +61,25 @@ section.sales {
     gap: 20px;
     align-items: center;
 }
-section.sales h2 {
-    font-size: 30px;
-    text-align: center;
-}
-section.sales p {
+div.sales p {
     font-size: 18px;
     margin: 20px 40px;
 }
-section.sales img{
+div.sales img{
     display: block;
     margin: auto;
     border-radius: 10px;
     border: 2px solid black;
     padding: 10px;
+}
+#container {
+    display: grid;
+    grid-template-areas: 
+    "H H H H"
+    "M M M M"
+    "S S S S"
+    "F F F F";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 /* Tablet */
 @media (max-width: 768px) {
