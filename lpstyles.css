@@ -76,6 +76,54 @@ section.sales img{
     border: 2px solid black;
     padding: 10px;
 }
+/* Tablet */
+@media (max-width: 768px) {
+    section.lpHist img#imgEnlarge, section.lpImpact img, section.lpLegacy img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 80%;
+        height: auto;
+    }    
+    header  {
+        position: relative;
+    }
+    section.sales img {
+        width: 80%;
+        height: auto;
+    }
+    section.sales {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    section.lpHist button {
+        position: static;
+        margin: 20px auto;
+        display: block;
+        z-index: 1000;
+    }
+    section.lpHist img.imgEnlarge {
+        transition: 0.5s ease;
+        transform: scale(1.125);
+        margin-top: 40px;
+        z-index: 0;
+    }
+    img#imgEnlarge {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+    }
+    section.lpImpact img {
+        max-width: 90%;
+    }
+    
+}
+/* Phone */
 @media (max-width: 480px) {
     section.sales img {
         width: 90%;
@@ -91,7 +139,6 @@ section.sales img{
         margin: 20px auto;
         display: block;
     }
-    
     img.imgEnlarge {
         transition: 0.5s ease;
         transform: scale(1.25);
